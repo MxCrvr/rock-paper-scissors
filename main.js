@@ -50,18 +50,21 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     rock.addEventListener('click', () => {
+        document.getElementById('intro').style.display = 'none';
         const computerSelection = getComputerChoice();
         playRound('rock', computerSelection);
         btn.style.display = 'block';
         // getWinner();
     });
     paper.addEventListener('click', () => {
+        document.getElementById('intro').style.display = 'none';
         const computerSelection = getComputerChoice();
         playRound('paper', computerSelection);
         btn.style.display = 'block';
         // getWinner();
     });
     scissors.addEventListener('click', () => {
+        document.getElementById('intro').style.display = 'none';
         const computerSelection = getComputerChoice();
         playRound('scissors', computerSelection);
         btn.style.display = 'block';
